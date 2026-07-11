@@ -4,12 +4,12 @@ const spinBtn = document.getElementById("spin-btn");
 
 // الجوائز والألوان الخاصة بها
 const prizes = [
-    { text: "خصم 10%", color: "#1abc9c" },
-    { text: "حظ أوفر", color: "#2ecc71" },
-    { text: "جائزة كبرى", color: "#3498db" },
-    { text: "توصيل مجاني", color: "#9b59b6" },
-    { text: "قسيمة 50$", color: "#f1c40f" },
-    { text: "كاش باك", color: "#e67e22" }
+    { text: "جرب ترسم", color: "#1abc9c" },
+    { text: "جرب تعزف", color: "#2ecc71" },
+    { text: "جرب تمثل", color: "#3498db" },
+    { text: "جرب تصمم ", color: "#9b59b6" },
+    { text: "جرب تعمل اعمال يدويه", color: "#f1c40f" },
+    { text: "جرب ترنم او تلقي شعر", color: "#e67e22" }
 ];
 
 const numSegments = prizes.length;
@@ -70,7 +70,7 @@ spinBtn.addEventListener("click", () => {
         const winningIndex = Math.floor((360 - actualAngle + 270) % 360 / (360 / numSegments));
         
         // إظهار النتيجة للمستخدم
-        alert(`مبروك! فزت بـ: ${prizes[winningIndex].text}`);
+        alert(`يلا قوم : ${prizes[winningIndex].text}`);
     }, 4000);
 });
 
